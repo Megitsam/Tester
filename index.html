@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tester</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        /* background: #a6c0a6fe; */
+        border-radius: 4px;
+        box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 0.1);
+      }
+      button {
+        padding: 20px 20px;
+        margin-left: 45%;
+        border-radius: 20px;
+        background-color: #bac8e0;
+        border-color: antiquewhite;
+      }
+      button:hover {
+        background-color: #e5b2ca;
+      }
+    </style>
+  </head>
+  <body style="background: #f68084; color: #bac8e0">
+    <form>
+      <h1 id="show"></h1>
+      <button type="button" onclick="button()">Press here</button>
+    </form>
+
+    <script>
+      var show = document.getElementById("show").value;
+      function button() {
+        document.getElementById("show").innerHTML = "ბუუუუუ";
+      }
+    </script>
+  </body>
+</html>
